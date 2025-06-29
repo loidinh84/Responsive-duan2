@@ -654,3 +654,16 @@ a {
   font-weight: 400;
   line-height: 1.86;
 }
+/* animation */
+.work .section-heading{
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+}
+
+/* aos */
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
+}

@@ -91,6 +91,15 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- style -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- responsive -->
+      <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- animation -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- animate -->
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Dự Án 3</title>
   </head>
   <body>
@@ -100,7 +109,7 @@
         <div class="header-top">
           <!-- logo -->
           <a href="./"
-            ><img src="./assets/icon/Logo.svg" alt="Shine smile" class="logo"
+            ><img src="./assets/icon/Logo.svg" alt="Shine smile" class="logo header__logo"
           /></a>
           <!-- nav -->
           <nav class="navbar">
@@ -158,6 +167,16 @@
         </section>
       </div>
     </header>
+    <!-- Tablet/Mobile header -->
+    <div class="mobile-header">
+      <!-- tablet/mobile menu -->
+      <input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="menu-checkbox" hidden>
+      <label for="menu-checkbox"><svg class="menu-header__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></label>
+      <!-- overlay -->
+      <label for="menu-checkbox" class="menu-overlay">
+
+      </label>
+    </div>
     <!-- main -->
     <main>
       <!-- our service -->
@@ -174,7 +193,7 @@
               <img
                 class="service__img"
                 src="./assets/image/doct2.jpg"
-                alt="Our service"
+                alt="Our service" data-aos="flip-up" data-aos-anchor="#service__btn--id"
               />
             </figure>
             <!-- service right -->
@@ -253,7 +272,7 @@
                   </div>
                 </div>
               </section>
-              <a href="#!" class="btn service__btn">All Service</a>
+              <a href="#!" class="btn service__btn" id="service__btn--id">All Service</a>
             </div>
           </div>
         </div>
@@ -261,7 +280,7 @@
       <!-- work -->
       <section class="work">
         <div class="container">
-          <h2 class="section-heading">How it works</h2>
+          <h2 class="section-heading animate__animated animate__swing animate__delay-3s" data-aos="animate__bounce">How it works</h2>
           <p class="section-desc work__desc">
             Exceptional dental care for all ages. Your great smile begins with a
             great dentist.
@@ -344,12 +363,12 @@
           </div>
         </div>
       </section>
-      <!-- teaem -->
+      <!-- team -->
       <section class="team">
         <div class="container">
           <div class="team-header">
-            <h2 class="section-heading">Our Virtual dentist</h2>
-            <a href="#!" class="btn team__cta">Meet our dentist</a>
+            <h2 class="section-heading" data-aos="zoom-out-left" data-aos-offset="200" data-aos-duration="3000">Our Virtual dentist</h2>
+            <a href="#!" class="btn team__cta" >Meet our dentist</a>
           </div>
           <div class="team__list">
             <!-- item 1 -->
@@ -683,5 +702,14 @@
         </div>
       </div>
     </section>
+    <!-- js animation -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    useClassNames: true,
+    initClassName: false,
+    animatedClassName: 'animate__animated',
+  });
+  </script>
   </body>
 </html>
