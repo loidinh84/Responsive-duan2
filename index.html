@@ -192,11 +192,22 @@
             <ul id="navbar__list--mobile"></ul>
             <!-- sử dụng js để copy navbar -->
             <script>
-              const navPC = document.querySelector("#navbar__list--pc")
-              const navMobile = document.querySelector("#navbar__list--mobile")
+              const navPC = document.querySelector("#navbar__list--pc");
+              const navMobile = document.querySelector("#navbar__list--mobile");
               // sao chép
-              navMobile.innerHTML = navPC.innerHTML
+              navMobile.innerHTML = navPC.innerHTML;
             </script>
+            <!-- separate ngăn cách -->
+            <div class="separate"></div>
+            <!-- cta action -->
+              <div class="show-on-mobile">
+                <li class="navbar__item">
+                  <a href="#!" class="navbar__link">Log In</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="#!" class="navbar__link">Sign Up</a>
+                </li>
+              </div>
       </div>
     </div>
     <!-- main -->
@@ -389,7 +400,7 @@
       <section class="team">
         <div class="container">
           <div class="team-header">
-            <h2 class="section-heading" data-aos="zoom-out-left" data-aos-offset="200" data-aos-duration="3000">Our Virtual dentist</h2>
+            <h2 class="section-heading" >Our Virtual dentist</h2>
             <a href="#!" class="btn team__cta" >Meet our dentist</a>
           </div>
           <div class="team__list">
