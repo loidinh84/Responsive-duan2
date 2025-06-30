@@ -114,6 +114,33 @@
     width: 90%;
     text-align: start;
   }
+  /* work list */
+  .work__list{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+  /* about */
+  .about-row{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  /* ẩn hình ảnh */
+  .about__img--small{
+    display: none;
+
+  }
+  .about__media{
+    width: 100%;
+  }
+  .about__img--big{
+    width: 90%;
+    border-radius: 15px;
+    margin: 25px auto;
+  }
+  .about-content{
+    width: 90%;
+    text-align: center;
+  }
 }
 
 /* Tablet */
